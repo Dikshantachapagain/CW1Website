@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/Contact.js"></script>
+  </head>
+  <body>
+    <!-------- Navbar start------------->
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#" class="link-active" id="index-active">Home</a></li>
+        <li><a href="pages/products.html">Product</a></li>
+        <li><a href="pages/blog.html">Blog</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/research.html">Research</a></li>
+        <li style="padding-top:15px;">
+          <input type="text" placeholder="search" style="border: 2px solid black;">
+        </li>
+        <li>
+          <a><img src="assets/cart logo.png" alt="cart" /><span id="cart-total" >0</span></a>
+        </li>
+        <li>
+          <a href="pages/login.html"><img src="assets/User logo.png" alt="user login"/></a>
+        </li>
+      </ul>
+    </nav>
+    <!----------------- End of navbar----------->
+
+    <!----------------Home section starts-------------->
+    <section class="home" id="home">
+      <div class="home-display">
+        <div class="box" style="background: url(assets/BonsaiFinal1.jpg)">
+          <h2 style="color: green; font-family: cursive; font-size: 50px">
+            Welcome to The Bonsai Shop,<br />
+            Nepal's First Platform Fully<br />Dedicated for  selling Bonsai
+          </h2>
+          <img src="assets/Home page photo.png" alt="Photo"style="height: 20rem; width: 30rem">
+          <button class="home-btn" style="margin-left: -400px; margin-top: 50px;">
+          <a href="pages/products.html" style="text-decoration: none;">Shop Now</a>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-------------Why us section ----------->
+    <div
+      class="inner-section"
+      style="background: url(assets/Why-us\ image.jpg)" >
+      <p style="font-size: 40px; font-size: 40px; color: white; font-family: cursive; padding: 10px; ">
+        What do you get when you shop at The Bonsai Shop
+      </p>
+
+      <div class="section">
+        <h2 class="why-us">Largest Selection</h2>
+        <p>
+          "We are the largest"<br />
+          dedicated nursery of bonsai <br />
+          trees in the Nepal
+        </p>
+      </div>
+
+      <div class="section">
+        <h2 class="why-us">Best quality</h2>
+        <p>
+          Loving care means optimal<br />
+          health and longevity for <br />
+          your bonsai tree.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2 class="why-us">Experinced Staff</h2>
+        <p>
+          Because we grow them<br />
+          at our nursery, we are <br />
+          extremely knowledgeable.
+        </p>
+      </div>
+      
+
+    <!--------Home section ends------->
+    
+
+    <!----------CONTACT US---------------->
+    <div
+      class="contact"
+      style="background: url(assets/background\ contact.jpg)">
+      <h1 class="display-1"> Please Feel Free To<br /> Contact Us</h1>
+
+      <form onsubmit="return validateForm()" class="form-center">
+        <input class="contact-us" type="text" id="name" name="name" placeholder="Your Name"/> <br />
+        <input class="contact-us" type="email" id="email" name="email" placeholder="Your Email" />
+        <br />
+        <textarea id="message" name="message" placeholder="Message"></textarea>
+        <br />
+        <input class="contact-us" type="submit" value="Submit" />
+      </form>
+    </div>
+    <!-----------CONATCT US ENDS----------->
+
+    <!--------- footer section starts -------------->
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>Welcome to the brotherhood of bonsai ! The Bonsai Shop is a ecommerce website for selling Bonsai. 
+              We are so happy to deliver high quality bonsai at your doorstep.. </p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <img src="assets/call logo.png" alt="call" style="height:30px; border-radius: 15px;">
+              <a href="#">+977 9814942234</a>
+            </div>
+            <div class="email">
+              <img src="assets/mail logo.png" alt="mail " style="height: 30px; border-radius: 15px;">
+              <a href="https://mail.google.com/">dikshantachapagain888@gmail.com</a>
+            </div>
+            <div class="location">
+              <img src="assets/location logo.png" alt="location" style="height:30px; border-radius: 15px;">
+              <a href="#">Kathmandu ,Nepal</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">QUICK LINKS</div>
+          <div><a href="/">Home</a></div>
+          <div><a href="pages/products.html">Product</a></div>
+          <div><a href="pages/blog.html">Blog</a></div>
+          <div><a href="pages/research.html">Research</a></div>
+          <div><a href="pages/about.html">About</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Subscribe us</div>
+          
+          <!----------Subscribe form------------>
+          <input type="text" placeholder="Enter email address" />
+          <input type="submit" name="" value="Send" />
+          <div class="media-icons" style="display: flex; justify-content: space-around;">
+            <a href="https://www.instagram.com/"><img src="./image/instagram.png"style="height: 55px; width: 55px; border-radius: 5px;"/></a>
+            <a href="https://www.facebook.com/"><img src="image/facebook.png" style="height: 55px; width: 55px; border-radius: 5px;"/></a>
+            <a href="https://www.linkedin.com/"><img src="image/linkedin.png" style="height: 55px; width: 55px; border-radius: 5px;"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p style="color: white;">
+          Copyright © 2023 <a href="./index.html">The Bonsai Shop </a> All rights reserved
+        </p>
+      </div>
+    </footer>
+    
+    <!---footer section ends -------->
+  </body>
+</html>

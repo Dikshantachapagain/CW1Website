@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <style>
+
+
+/*This class sets padding and font styles for an element with class "about-content".*/
+.about-content {
+  padding-left: 170px;
+  padding-right: 170px;
+  padding-top: 35px;
+  font-family: math;
+  font-size: 20px;
+}
+/*This class sets styles for a container element with images*/
+.photo {
+  margin-top: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+/*This class sets styles for each team member's element, such as display type, alignment, height, width, border-radius, and box-shadow*/
+.photo .team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 600px;
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+/*This class sets styles for images within the team member's element, such as width, height, margin, and padding.*/
+.photo .team-member img {
+  width: auto;
+  min-height: 400px;
+  text-align: center;
+  margin: 35px 0;
+}
+/*The h4 selector sets text-alignment for h4 headings.*/
+h4 {
+  text-align: center;
+  margin: -34px;
+}
+/*This class sets styles for team member's element such as width, margin, cursor, and padding.*/
+.team-member img {
+  width: 378px;
+  height: 445px;
+  margin: 35px 0;
+  padding: 20px;
+}
+
+.team-member {
+  width: 24%;
+  margin: 78px;
+  cursor: pointer;
+  padding-top: 5px;
+}
+
+.about-content {
+  text-align: justify;
+  letter-spacing: 3px;
+}
+/*This class sets styles for elements with class "see", such as text color and hover color.*/
+.see{
+  color: black;
+}
+ .see:hover{
+  
+  color: red;
+ }
+
+    </style>
+  </head>
+  <body>
+
+    <!--------------------------navbar-------------------------- -->
+    <nav>
+      <div class="logo">
+        <img src="../assets/logo.png" alt="Logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="../index.html" class="link-active">Home</a></li>
+        <li><a href="../pages/products.html">Product</a></li>
+        <li><a href="../pages/blog.html">Blog</a></li>
+        <li><a href="../pages/about.html" id="about-active">About</a></li>
+        <li><a href="../pages/research.html">Research</a></li>
+        <li  style="padding-top: 15px;">
+          <input type="text"placeholder="search"style="border: 2px solid black;">
+        </li>
+        <li>
+          <a><img src="../assets/cart logo.png" alt="cart" ><span id="cart-total" >0</span></a>
+        </li>
+        <li>
+          <a href="../pages/login.html"><img src="../assets/User logo.png" alt="user login"/></a>
+        </li>
+      </ul>
+    </nav>
+    <!--------------------- End of navbar ------------------------>
+
+
+
+    
+    <!--------------------------ABOUT US Section Starts------------------------->
+    <section>
+      <header style=" text-align: center; font-size: 30px;padding-top: 30px; padding-bottom: 15px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: green;">
+        ABOUT US
+      </header>
+      <div class="about-section" style="background: url()">
+        <p class="about-content" style="line-height: 30px;">
+          As the saying goes, “To plant garden is to believe in tomorrow”, we always dreamed of sharing this beautiful journey of growing and nurturing bonsai plants ensuring the sound mental health of an individual. It all started when we saw the attractive bonsai plants in the Japanese cartoons specifically ‘NINJA HATTORI “in early ages. As we were eager to know about shaping beautiful shrub, we researched everything about it. We successfully established our company THE BONSAI PLANT on Jan 1,2023 based in Kathmandu, Nepal and today we are shipping the grown bonsai plants at your doorstep along with the tool kit and manuals for the beginners. Welcome to the brotherhood of bonsai friends!
+          The common goal of founders of THE BONSAI SHOP was to make you know about the philosophy of life by growing bonsai plants. We Team 6 don’t want any individual loose a chance to become creative, compassionate, and consistent as we chose to be one in very short span of time. It was hard but not impossible to gather skilled members who coordinated to bring this beautiful ideas and output to you all. From having no idea about how the websites were built to building this amazing e-commerce website,
+          The Bonsai plant  having all the features was hard yet valuable journey to all the skilled folks .        
+        </p>
+      </div>
+
+      <h2 style="padding-top: 55px; text-align: center;">
+        MEET OUT TEAM MEMBERS
+      </h2>
+
+      <div class="photo">
+        <div class="team-member">
+          <img src="../image/Dikshanta.jpg" alt="Dikshanta" >
+          <h4>Dikshanta chapagain</h4>
+          <p style="color: gray; margin-top: 10px;" >
+            Group leader<br>
+
+            <a class="see" href="../pages/Dikshantacv.html" style="  text-decoration: none; " >See more</a>
+           </p>
+           
+        </div>
+
+        <div class="team-member">
+          <img src="../image/Zenith.jpg" alt="Zenith" >
+          <h4>Zenith Narsingh Shakya</h4>
+          <p style="color: gray; margin-top: 10px;">
+           Member<br>
+           <a  class="see" href="../pages/Zenithcv.html" style="text-decoration: none;">See more</a>
+          </p>
+        </div>
+
+        <div class="team-member">
+          <img src="../image/Shaisnuta.JPG" alt="Shaisnuta" >
+          <h4>Shahisnuta Nhemhafuki</h4>
+          <p style="color: gray; margin-top: 10px;">
+            Member<br>
+            <a  class="see" href="../pages/Sahisnutacv.html" style=" text-decoration: none;">See more</a>
+           </p>
+        </div>
+
+        <div class="team-member">
+          <img src="../image/Saurav.JPG" alt="Saurav" >
+          <h4>Saurav aryal</h4>
+          <p style="color: gray; margin-top: 10px;">
+            Member<br>
+            <a class="see" href="../pages/Sauravcv.html" style=" text-decoration: none;">See more</a>
+           </p>
+        </div>
+
+        <div class="team-member">
+          <img src="../image/Ankit.jpg" alt="Ankeet" >
+          <h4>Ankeet Regmi</h4>
+          <p style="color: gray; margin-top: 10px;">
+            Member<br>
+            <a class="see" href="../pages/Ankitcv.html" style=" text-decoration: none;">See more</a>
+           </p>
+        </div>
+      </div>
+    </section>
+    <!-----------------------------------------About us section ends----------------------->
+
+    <!-- footer section starts  -->
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>Welcometo the brotherhood of bonsai ! The Bonsai Shop is a ecommerce website for selling Bonsai. We are so happy to deliver high quality bonsai at your doorstep. </p>
+          </div>
+          <div class="lower">
+            <div class="topic">Contact us</div>
+            <div class="phone">
+              <img src="../assets/call logo.png" alt="call" style="height:30px; border-radius: 15px;">
+              <a href="#">+977 9814942234</a>
+            </div>
+            <div class="email">
+              <img src="../assets/mail logo.png" alt="mail " style="height: 30px; border-radius: 15px;">
+              <a href="https://mail.google.com/">dikshantachapagain888@gmail.com</a>
+            </div>
+            <div class="location">
+              <img src="../assets/location logo.png" alt="location" style="height:30px; border-radius: 15px;">
+              <a href="#">Kathmandu ,Nepal</a>
+            </div>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">QUICK LINKS</div>
+          <div><a href="/">Home</a></div>
+          <div><a href="../pages/products.html">Product</a></div>
+          <div><a href="../pages/blog.html">Blog</a></div>
+          <div><a href="../pages/research.html">Research</a></div>
+          <div><a href="../pages/about.html">About</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Subscribe us</div>
+          <!---------------------Subscribe form---------------------------->
+          <input type="text" placeholder="Enter email address" />
+          <input type="submit" name="" value="Send" />
+          <div class="media-icons" style="display: flex; justify-content: space-around;">
+            <a href="https://www.instagram.com/"><img src="../image/instagram.png"style="height: 55px; width: 55px; border-radius: 5px;"/></a>
+            <a href="https://www.facebook.com/"><img src="../image/facebook.png" style="height: 55px; width: 55px; border-radius: 5px;"/></a>
+            <a href="https://www.linkedin.com/"><img src="../image/linkedin.png" style="height: 55px; width: 55px; border-radius: 5px;"/></a>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p style="color: white;">
+          Copyright © 2023 <a href="../index.html">The Bonsai Shop </a> All rights reserved
+        </p>
+      </div>
+    </footer>
+    
+    <!-- footer section ends -->
+
+  </body>
+</html>

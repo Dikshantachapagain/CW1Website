@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* contains common styles for all pages */
+
+      * {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /*It sets style, margin for the element */
+      section {
+        margin-top: 150px;
+      }
+      /*It sets the height and width of an element wih class "container" ,sets the felx property, and justify the content to center*/
+      .container {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+/*It sets the height,width ,border,flex property,padding and other styles to the element*/
+      .login-box {
+        height: 600px;
+        width: 450px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+      }
+
+      .login-box h1 {
+        margin-bottom: 50px;
+      }
+
+      input,
+      input[type="text"] {
+        height: 50px;
+        width: 100%;
+        outline: none;
+        margin-top: 15px;
+        font-size: 1.4rem;
+      }
+/*Its gives styles to the button such as adding margin,padding,height,width etc*/
+      button {
+        margin-top: 20px;
+        width: 80%;
+        border: none;
+        outline: none;
+        height: 50px;
+        background-color: green;
+        cursor: pointer;
+        font-size: 1.4rem;
+        border-radius: 5px;
+        color: white;
+      }
+      .login-box p {
+        margin-top: 30px;
+      }
+
+      .status {
+        margin-top: 20px;
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img src="../assets/floral login.png" alt="image login page" />
+      </div>
+      <div class="login-box">
+        <h1>Login</h1>
+        <input type="text" placeholder="Enter your email" id="email" />
+        <input type="password" placeholder="Enter your password"id="password"/>
+        <button id="login-btn">Login</button>
+        <p>Not registered yet ? <a href="#">Register here</a></p>
+        <h3 class="status" id="status"></h3>
+      </div>
+    </div>
+  </body>
+  <script src="../js/validateLogin.js"></script>
+</html>

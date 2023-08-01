@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogs</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+
+  /*The selector sets styles for the body element such as margin and padding.*/
+  body{
+  margin: 0px;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+/*This selector sets styles for table header and table data cells, such as border, border-collapse, padding, and border-bottom.*/
+th, td {
+  border: 2px;
+  border-collapse: collapse;
+  padding: 20px;
+  border-bottom: 1px solid lightslategray;
+  border: 1px solid black;
+}
+/*This class sets styles for an element with a slider, such as width, height, border-radius, box-shadow, and margins.*/
+.slider{
+  width: 90%;
+  height: 450px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px grey;
+  margin-bottom: 30px;
+  margin-left: 55.5px;
+  margin-top: 50px;
+}
+/*This classes set margins for different elements.*/
+.impact{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.Introduction{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.Bonsai{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.Conclusion{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.content{
+  margin-left: 50px;
+}
+.Tech{
+  margin-left: 250px;
+}
+
+.slider-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+
+  </style>
+</head>
+<body>
+  <!---- navbar ---->
+  <nav>
+    <div class="logo">
+      <img src="../assets/logo.png" alt="Logo" />
+    </div>
+    <ul class="nav-links">
+      <li><a href="../index.html" class="link-active">Home</a></li>
+      <li><a href="../pages/products.html">Product</a></li>
+      <li><a href="../pages/blog.html" id="blog-active">Blog</a></li>
+      <li><a href="../pages/about.html" >About</a></li>
+      <li><a href="../pages/research.html">Research</a></li>
+      <li  style="padding-top: 15px;">
+        <input type="text"placeholder="search"style="border: 2px solid black;">
+      </li>
+      <li>
+        <a><img src="../assets/cart logo.png" alt="cart" ><span id="cart-total" >0</span></a>
+      </li>
+      <li>
+        <a href="../pages/login.html"
+          ><img src="../assets/User logo.png" alt="user login"
+        /></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- end of navbar -->
+
+  <!--image slider start-->
+  <div class="slider">
+  <!--slide image start--> 
+     <div id="slideimage">
+      <div class="Images">
+        <img class="slider-img" src="../image/sliderimage1.jpg">
+      </div>
+      <div class="Images2">
+        <img class="slider-img" src="../image/sliderimage2.jpg">
+      </div>
+      <div class="Images3"> 
+        <img class="slider-img" src="../image/sliderimage3.jpg">
+      </div>
+      <div class="Images4">
+        <img class="slider-img" src="../image/sliderimage4.jpg">
+      </div> 
+     </div> 
+       <!--slide image ends--> 
+  </div> 
+  <!--manual automatic slide-->
+  <script>
+
+    // store the url of multiple images in array
+    var images = ['../image/sliderimage1.jpg', '../image/sliderimage2.jpg', '../image/sliderimage3.jpg','../image/sliderimage4.jpg'];
+
+    // change the image in each 3 seconds. 3000 means 3000 milliseconds
+      var x = 0;
+      var imgs = document.getElementById('slideimage');
+      setInterval(slider, 3000);
+
+      function slider() {
+        if (x < images.length)
+          {
+          x = x + 1;
+          }
+        else
+          {
+            x = 1;
+          }   
+
+          imgs.innerHTML = "<img class='slider-img' src=" + images[x - 1] + ">"
+      }
+  </script>
+  <!--end of manula automatic slide-->
+  <header>
+<section>
+  <!--table of contents starts-->
+  <table class="content" style="width: 90%;">
+    <tr>
+    <th style="background-color: black; color: white;">Table of content</th>
+    </tr>
+    <tr>
+    <td><a href="#introduction" style="color: black; text-decoration: none;">Introduction</a></td>
+    </tr>
+    <tr>
+    <td><a href="#impacts" style="color: black; text-decoration: none;">Postive and Negative impacts of technology</a></td> </tr>
+    <tr>
+    <td><a href="#bonsai" style="color: black; text-decoration: none;">Impact of technology while selling Bonsai plants</a></td>
+    </tr>
+    <tr>
+    <td><a href="#conclusion" style="color: black; text-decoration: none;">Conclusion</a></td>
+    </tr>
+   </table>
+   <!--table of content ends-->
+  <style>
+    section p {
+		font-size: 20px;
+		text-align: justify;
+		line-height: 1.5;
+		margin: 0px;
+    padding-left: 0px;
+	}
+
+	.image {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		margin-bottom: 50px;
+	}
+</style>
+<!--Impacts of Technology in life and business starts-->
+<h1 style="font-family:math; text-align: center; font-size: 46px; color: black;margin-top: 100px;">The Impact Of Technology In Life And Business</h1>
+<!--Introduction on technology starts-->
+<section id="introduction">
+  <div class="Introduction"> 
+    <h2 style="margin-top: 50px;">Introduction to Technology.</h2>
+    <font size = +1> 
+      <p>Technology refers to the tools, devices, systems, and methods that are used to achieve practical goals. It can be divided into several categories, including information technology, transportation technology, energy technology, manufacturing technology, and biotechnology, among others. Some examples of technology include computers, the Internet, smartphones, renewable energy sources, and manufacturing processes such as 3D printing. Technology has had a major impact on many aspects of society and has changed the way we communicate, work, and live.
+        Technology is the continually developing result of accumulated knowledge and application in all techniques, skills, methods, and processes used in industrial production and scientific research. Technology is embedded in the operation of all machines, with or without detailed knowledge of their function, for the intended purpose of an organization.
+      The word Technology can also mean the product resulting from such eforts. Technological advancement gave led to significant changes in society. It has helped human society to discover may mythic building and extinct pre-historic aninmals like Dinosaurs, Wooly Mammoth and many more. Nowdays, people are trying to build robots which can help in improving the human society.
+        Humans have advanced to far more better technology that does not create pollution for example: electric vehicles that hepls in maintaining air pollution and uses electricity as its fuel. 
+      </p>
+    </font> 
+  </div>
+</section>
+<!--Introduction on technology ends-->
+
+<!--Impacts of technology starts-->
+<section id="impacts">
+  <div class="impact">
+    <h2 style="padding-top: 21px;">Positive and Negative impact of technology.</h2>
+    <ul>
+    <font size = +1> 
+      <li style="padding-top: 15px; font-weight: bold;" >Positive impact:</li>
+      <ol style="padding-top: 15px;">  
+        <li>Increased efficiency: Technology can help organizations and enterprises get more done in less time by streamlining procedures, lowering errors, and increasing productivity.</li><br>
+        <li>Improved communication: No matter where they are, people can now connect and communicate with one another more easily because to technology.</li><br>
+        <li>Greater access to information: People now find it simpler to access a wealth of knowledge on almost any subject thanks to the Internet and other digital technology.</li><br>
+        <li>Enhanced education: Technology can be used in classrooms and online to give students access to educational resources and interactive learning opportunities.</li><br>
+        <li>Improved healthcare: With advancements like telemedicine, electronic health records, and medical devices boosting patient care and results, technology has completely changed the healthcare sector.</li><br>
+        <li>Increased safety: Security systems, car safety features, and emergency response technologies are just a few ways that technology can assist make life safer in various contexts.</li><br>
+        <li>Greater convenience: From online banking and shopping to the use of smart home devices, technology has improved many aspects of daily living.</li><br>
+        <li>Enhanced entertainment: Video games, streaming services, and virtual reality are just a few of the new forms of entertainment made possible by technology.</li><br>
+      </ol>
+    </font> 
+  </ul>
+  <ul>
+   <font size = +1>
+    <li style="padding-top: 15px; font-weight: bold; font-family: math;">Negative impact:</li>
+    <ol style="padding-top: 15px; font-family: math;">
+      <li>Dependence: Some people could grow overly reliant on technology, which could cause issues if it breaks down or is unavailable.</li><br>
+      <li>Cybersecurity risks: The use of technology also increases the threat of cyberattacks and data breaches, which could expose private data and result in identity theft.</li><br>
+      <li>Privacy concerns: Technology can help improve the collection and use of personal data by businesses and organizations, which may give rise to privacy concerns.</li><br>
+      <li>Job displacement: Automation and artificial intelligence are two examples of technology that have the potential to replace human labour and cause job losses.</li><br>
+      <li>Health issues: Overusing technology, such as spending too much time on cellphones or spending too much time in front of a computer, can be detrimental to one's physical and emotional well-being.</li><br>
+      <li>Social isolation: Due to their excessive use of technology and lack of in-person connections, some people may experience social isolation.</li><br>
+      <li>Digital divide: Between individuals who have access to technology and those who do not, there is a "digital divide" that may lead to disparities in opportunities for work, education, and other factors.</li><br>
+      <li>Environmental impact: Through the usage of non-renewable resources and the creation of e-waste, the manufacture and use of technology can have a negative influence on the environment.</li><br>
+    </ol>
+   </font> 
+  </ul> 
+ </div>
+</section>
+<!--Impacts of technology ends-->
+
+<!--Imapcts of technology while selling bonsai plants starts-->
+<section id="bonsai">
+  <div class="Bonsai">
+    <h2 style="text-align:center; padding-top:20px; font-size:40px; font-family: math;">Impact of technology while selling Bonsai plants</h2>
+   <font size = +1>
+    <p><b>Technology has had a significant impact on the way bonsai plants are sold and marketed. Here are a few ways that technology has affected the bonsai industry:</b></p>
+    <ul style="padding-top:0px; font-family: math;">
+      <li>Online sales: A considerably wider customer base is now accessible to bonsai vendors thanks to the internet. Selling bonsai plants to customers around the world is now simple thanks to online marketplaces and e-commerce platforms like Amazon and Etsy.</li><br>
+      <li>Social media marketing: For bonsai retailers, social media sites like Facebook, Instagram, and Pinterest have developed into effective tools for showcasing their plants and interacting with possible clients. In order to attract a larger audience, sellers might use hashtags and publish images and videos of their bonsai plants.</li><br>
+      <li>Online tutorials and resources: Resources and tutorials on how to care for bonsai plants may be found on a wide variety of websites and YouTube channels. This has probably improved the appeal of the activity and made it simpler for others to learn about bonsai.</li><br>
+      <li>More sophisticated techniques for Bonsai growing: Technology development has made it simple for bonsai fans to access new techniques for cultivating bonsai. Additionally, digital tools like AI or IoT can optimize or automate temperature management, lighting, or watering, which is helpful for bonsai upkeep.</li><br>
+      <li>Virtual tours or video calls: Virtual tours, video conversations, and other digital tools have grown in popularity among bonsai dealers as a result of the pandemic scenario because they give customers the impression that they are visiting a physical store and enable remote advice and on-demand support.</li><br>
+    </ul>
+   </font> 
+  </div>
+</section>
+<!--Imapcts of technology while selling bonsai plants ends-->
+
+<!--Conclusion starts-->
+<section id="conclusion">
+  <div class="Conclusion">
+    <h2 style="font-size: 40px; text-align: center; font-family: math;">Conclusion</h2>
+   <font size = +1>
+    <p style="font-family: math;">In conclusion,Technology has had a profound impact on our daily lives and has changed the way we communicate, work, and live in general. It has brought numerous benefits such as increased access to information, improved efficiency, and greater connectivity. However, it also presents challenges such as privacy concerns, job displacement, and addictive behaviors. Overall, technology continues to shape the world and it is up to us to harness its benefits while mitigating its drawbacks
+       technology has significantly changed how bonsai plants are advertised and sold.In context of Bonsao plant, it is now simpler for bonsai vendors to interact with clients and reach a larger audience because to online sales, social media marketing, online courses and resources, virtual tours, and technological advancements. These developments have also made it simpler for individuals to learn about bonsai, which is probably why the pastime is becoming more and more well-liked. In addition, with the aid of technology, innovative methods for bonsai growing are now freely accessible to aficionados. It is obvious that technology has benefited the bonsai industry significantly and will probably do so in the future.</p>
+   </font> 
+  </div>
+</section>
+<!--Conclusion ends-->
+</main>
+</section>      
+<!--Impacts of technology in life and business ends-->
+  </main>
+  <!-- footer section starts  -->
+  <footer>
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">About us</div>
+          <p>Welcome to the brotherhood of bonsai ! The Bonsai Shop is a ecommerce website for selling Bonsai. We are so happy to deliver high quality bonsai at your doorstep.</p>
+        </div>
+        <div class="lower">
+          <div class="topic">Contact us</div>
+          <div class="phone">
+            <img src="../assets/call logo.png" alt="call" style="height:30px; border-radius: 15px;">
+            <a href="#">+977 9814942234</a>
+          </div>
+          <div class="email">
+            <img src="../assets/mail logo.png" alt="mail " style="height: 30px; border-radius: 15px;">
+            <a href="https://mail.google.com/">dikshantachapagain888@gmail.com</a>
+          </div>
+          <div class="location">
+            <img src="../assets/location logo.png" alt="location" style="height:30px; border-radius: 15px;">
+            <a href="#">Kathmandu ,Nepal</a>
+          </div>
+        </div>
+      </div>
+      <div class="middle box">
+        <div class="topic">QUICK LINKS</div>
+        <div><a href="/">Home</a></div>
+        <div><a href="../pages/products.html">Product</a></div>
+        <div><a href="../pages/blog.html">Blog</a></div>
+        <div><a href="../pages/research.html">Research</a></div>
+        <div><a href="../pages/about.html">About </a></div>
+      </div>
+      <div class="right box">
+        <div class="topic">Subscribe us</div>
+        <!---------------------Subscribe form---------------------------->
+        <input type="text" placeholder="Enter email address" />
+        <input type="submit" name="" value="Send" />
+        <div class="media-icons" style="display: flex; justify-content: space-around;">
+          <a href="https://www.instagram.com/"><img src="../image/instagram.png"style="height: 55px; width: 55px; border-radius: 5px;"/></a>
+            <a href="https://www.facebook.com/"><img src="../image/facebook.png" style="height: 55px; width: 55px; border-radius: 5px;"/></a>
+            <a href="https://www.linkedin.com/"><img src="../image/linkedin.png" style="height: 55px; width: 55px; border-radius: 5px;"/></a>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <p style="color: white;">
+        Copyright © 2023 <a href="../index.html">The Bonsai Shop </a> All rights reserved
+      </p>
+    </div>
+  </footer>
+
+  <!-- footer section ends -->
+
+  </body>
+</html>
